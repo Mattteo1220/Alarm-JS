@@ -1,0 +1,35 @@
+body{
+    background-color:black;
+    color: white;
+}
+
+
+main{
+    width: 25%;
+    height: auto;
+    margin: 150px auto;
+    border: 1px solid white;
+    text-align: center;
+    padding: 20px;
+}
+
+.flex-container{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.colored, #change{
+    cursor: pointer;
+}
+
+.colored{
+    color: orange;
+}
+
+#change{
+    background-color:gray;
+    border: 1px solid gray;
+    border-radius: 30%;
+    width: 55px;
+}
+
