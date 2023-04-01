@@ -18,6 +18,16 @@ main{
     justify-content: space-evenly;
 }
 
+.grid-container{
+    display:grid;
+    grid-template: repeat(33%, 3) / repeat(50%, 2);
+}
+
+.grid-item:nth-child(0){
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
 .colored, #change{
     cursor: pointer;
 }
@@ -31,5 +41,10 @@ main{
     border: 1px solid gray;
     border-radius: 30%;
     width: 55px;
+}
+
+#main-alarm{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
