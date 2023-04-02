@@ -5,7 +5,7 @@ body{
 
 
 main{
-    width: 25%;
+    width: 15%;
     height: auto;
     margin: 150px auto;
     border: 1px solid white;
@@ -20,12 +20,28 @@ main{
 
 .grid-container{
     display:grid;
-    grid-template: repeat(33%, 3) / repeat(50%, 2);
+    grid-template: 33% 33% 33% / 50% 50%;
 }
 
-.grid-item:nth-child(0){
+.grid-item:nth-child(1){
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.grid-item:nth-child(3){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .colored, #change{
@@ -38,13 +54,14 @@ main{
 
 #change{
     background-color:gray;
-    border: 1px solid gray;
-    border-radius: 30%;
-    width: 55px;
+    width: auto;
 }
 
 #main-alarm{
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    font-size: 85%;
+    height: auto;
+    width: auto;
 }
 
