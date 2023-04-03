@@ -9,20 +9,36 @@
     </head>
 
     <body>
-        <main>
-            <header>
-                <nav class="flex-container">
-                    <h5 class="flex-item colored">Edit</h5>
-                    <h5 class="flex-item colored">+</h5>
-                </nav>
-            </header>
-            <h3>Alarm</h3>
-            <h6>Sleep|Wake up</h6>
-            <section class="grid-container" id="main-alarm">
-                <p class="grid-item">5:00 A.M.</p>
-                <p class="grid-item">Tomorrow only</p>
-                <p id="change" class="colored grid-item">Change</p>
+        <main class="clock-flex-container">
+            <section id="alarms" class="clock-flex-item">
+                <header>
+                    <nav class="flex-container">
+                        <h5 class="flex-item colored" id="edit">Edit</h5>
+                        <h5 class="flex-item colored" id="add">+</h5>
+                    </nav>
+                </header>
+                <h3>Alarm</h3>
+                <h6>Sleep|Wake up</h6>
+                <section class="grid-container" id="main-alarm">
+                    <p class="grid-item">5:00 A.M.</p>
+                    <p class="grid-item">Tomorrow only</p>
+                    <label class="switch grid-item">
+                        <input type="checkbox" class="setter">
+                        <span class="slider round"></span>
+                    </label>
+                </section>
+    
+                <section id="other" hidden>
+    
+                </section>
             </section>
+
+            <section class="clock-flex-item" id="add-alarm" hidden>
+                <label name="time">
+                    <input type="number" for="time" id="time-input">
+                </label>
+            </section>
+
         </main>
     </body>
 </html>
